@@ -1,4 +1,4 @@
-# probability-problems
+# Probability Problems
 
 Environment: VS Code, Clang++ C++17, macOS
 
