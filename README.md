@@ -1,7 +1,11 @@
 # probability-problems
+
+Environment: VS Code, Clang++ C++17, macOS
+
 C++ probability programming exercises: Monte Carlo simulations, dynamic programming, and combinatorial analysis.
 
-Approach / Methods  
+## Approach / Methods  
+
 Problem 1-2: Chose simple linear that stops immediately when it finds a different symbol. Alternative approaches like regex or string parsing would add complexity without benefit since because we only need to count from the start. Used integer arrays to represent paylines because they provide direct grid indexing, since each number corresponds to which row to check in each column.  
 
 Problem 3: Selected Monte Carlo over analytical calculation because the interdependent pick mechanics (extra picks affecting game length, stopper ending games) create complex probability trees. Simulation handles the state dependencies naturally without manual tree enumeration, while manually enumerating every possible game sequence could be more complex to fastly handle combinatorics (with 15 objects and variable game lengths, there would be hundreds of possible game paths while implementing complex conditional probability calculations for each branch).  
